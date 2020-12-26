@@ -30,7 +30,7 @@ A partir de [Sintaxis básica](#), las cosas toman un paso mas lento, y no se de
 
 Cada capítulo cuenta con su propia carpeta que comparte el mismo nombre. Dentro de dicha carpeta, hay carpetas para cada ejemplo, y la misma puede o no estar separada en versiones, donde cada versión implica una modificación del código.
 
-Por ejemplo, el código del capítulo 1 está organizado como:
+Por ejemplo, el código del capítulo "Introducción" está organizado como:
 
 ```
 ~$ tree --dirsfirst ch1
@@ -63,7 +63,7 @@ Recomendaciones:
 - El código debe de estar escrito mayormente en Go.
 - Trate de atenerse al estilo del resto del libro.
 - Sus commits deben de estar [firmados](https://docs.github.com/en/free-pro-team@latest/github/authenticating-to-github/signing-commits).
-- Cree su PR temprano, antes de comenzar a escribir código si es psible, con un sujeto explicito. Trate de plantear su plan de acción en la creación del PR. Esto le permitirá a otros proveer retroalimentación sobre el contenido.
+- Cree su PR temprano, antes de comenzar a escribir código si es posible, con un sujeto explicito. Trate de plantear su plan de acción en la creación del PR. Esto le permitirá a otros proveer retroalimentación sobre el contenido.
 
 ## Licencia
 
