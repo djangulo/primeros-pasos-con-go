@@ -28,13 +28,13 @@ A partir de [Sintaxis básica](#), las cosas toman un paso mas lento, y no se de
 
 ## ¿Como está organizado este libro?
 
-Cada capítulo cuenta con una breve exposición, y uno o más ejemplos ejecutables. Cada ejemplo se encontrará en su propia carpeta, y puede o no estar separado en versiones, donde cada versión implica una modificación del código.
+Cada capítulo cuenta con su propia carpeta que comparte el mismo nombre. Dentro de dicha carpeta, hay carpetas para cada ejemplo, y la misma puede o no estar separada en versiones, donde cada versión implica una modificación del código.
 
 Por ejemplo, el código del capítulo 1 está organizado como:
 
 ```
 ~$ tree --dirsfirst ch1
-ch1
+introduccion
 ├── hola-mundo
 │   └── hola-mundo.go
 ├── servidor-web
