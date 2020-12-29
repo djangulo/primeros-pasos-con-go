@@ -4,9 +4,9 @@ Aprende a utilizar `Go`, también conocido como Golang.
 
 Este libro cuenta con las siguientes lecciones, a través de las cuales exploraremos diferentes aspectos del lenguaje. Desde la instalación, hasta patrones avanzados.
 
-- [Instalación de Go y configuración de ambiente](https://github.com/djangulo/primeros-pasos-con-go/tree/main/Instalar-go.md)
+- [Instalación de Go y configuración de ambiente](https://github.com/djangulo/primeros-pasos-con-go/tree/main/Instalacion.md)
 - [Introducción](https://github.com/djangulo/primeros-pasos-con-go/tree/main/Introduccion.md)
-- Sintaxis básica
+- [Sintaxis](https://github.com/djangulo/primeros-pasos-con-go/tree/main/Sintaxis.md)
 - Tipos de datos simples
 - Tipos de datos compuestos
 - Funciones y métodos
