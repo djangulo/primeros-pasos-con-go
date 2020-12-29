@@ -90,8 +90,8 @@ Debajo hay instrucciones para iniciar un proyecto
 Para usar módulos, cree una carpeta para su proyecto, y en una terminal o shell
 
 ```sh
-~$ go mod init nombre-del-proyecto
-go: creating new go.mod: module nombre-del-proyecto
+~$ go mod init mi-proyecto
+go: creating new go.mod: module mi-proyecto
 ```
 
 Para agregar dependencias, sencillamente importelas a su proyecto. Algunas dependencias están versionadas, usted elige la versión al momento de importarlas, sin embargo, no se espera que el nombre del paquete cambie:
@@ -111,11 +111,24 @@ Los módulos siempre tratan de importar paquetes de repositorios remotos. Si qui
 Antes:
 
 ```diff
-module bla
+module mi-proyecto
 
 go 1.15
 
-+ replace github.com/djangulo/primeros-pasos-con-go /ruta/a/paquete/local
++ replace github.com/djangulo/primeros-pasos-con-go => /ruta/a/paquete/local
+
+require github.com/golang-migrate/migrate/v4 v4.14.1 // indirect
+```
+
+No necesariamente debe de ser un paquete local, puede ser, por ejemplo, su propio fork u otro repositorio completamente distinto:
+
+```diff
+module mi-proyecto
+
+go 1.15
+
+- replace github.com/djangulo/primeros-pasos-con-go => /ruta/a/paquete/local
++ replace github.com/djangulo/primeros-pasos-con-go => github.com/usuario/primeros-pasos-co-go
 
 require github.com/golang-migrate/migrate/v4 v4.14.1 // indirect
 ```
