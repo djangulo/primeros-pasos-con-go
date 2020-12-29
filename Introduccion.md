@@ -20,7 +20,7 @@ No podemos presentar un lenguaje de programación sin comenzar con el clásico `
 Cree un archivo llamado `hola-mundo.go`, y escriba el código siguiente.
 
 ```go
-//  introduccion/hola-mundo/hola-mundo.go
+//  introduccion/hola-mundo
 package main
 
 import "fmt"
@@ -50,7 +50,7 @@ hola-mundo  hola-mundo.go
 Ahora podemos desglosar el programa, que a pesar de su simplicidad, ilustra muchos puntos clave de el uso de Go.
 
 ```go
-// introduccion/hola-mundo/hola-mundo.go
+// introduccion/hola-mundo
 package main // 1: declaración de paquete
 
 import "fmt" // 2: importaciones
@@ -100,7 +100,7 @@ Uno de los usos más comunes de Go es para servidores y utilidades de redes y co
 La librería `net/http` cuenta con un poderoso servidor que puede ser usado en producción.
 
 ```go
-// introduccion/servidor-web/v0/main.go
+// introduccion/servidor-web/v0
 package main
 
 import (
@@ -141,7 +141,7 @@ Escribamos una función, `hola` que acepta un `io.Writer` (no olvide importar `i
 Agregaremos una pequeña validación, en caso de que nombre esté vacío (pronto veremos porqué).
 
 ```go
-// introduccion/servidor-web/v1/main.go
+// introduccion/servidor-web/v1
 ...
 func hola(w io.Writer, nombre string) {
 	if nombre == "" {
@@ -198,7 +198,7 @@ Si corre el programa, y lo prueba, notará que retorna exactamente el mismo resu
 Vamos a modificar nuestra función `handler` para lea los valores del `query string`:
 
 ```go
-// introduccion/servidor-web/v1/main.go
+// introduccion/servidor-web/v1
 ...
 func handler(w http.ResponseWriter, r *http.Request) {
 	q := r.URL.Query()
@@ -213,7 +213,7 @@ El método `Get` de `url.Values` retorna el primer valor del `[]string` bajo esa
 Hasta ahora, el archivo `servidor-web/main.go` se ve así:
 
 ```go
-// introduccion/servidor-web/v1/main.go
+// introduccion/servidor-web/v1
 package main
 
 import (
@@ -280,7 +280,7 @@ Aquí vemos por primera vez el uso del operador `:=`, el cual, dentro de una fun
 A continuación, nuestra primera versión de `wc`:
 
 ```go
-// introduccion/wc/v0/main.go
+// introduccion/wc/v0
 package main
 
 import (
@@ -348,7 +348,7 @@ Debido a que estamos usando la variable `fh` fuera del alcance de la cláusula `
 Cambie la parte de la validación por el código siguiente:
 
 ```go
-// introduccion/wc/v1/main.go
+// introduccion/wc/v1
 ...
     var fh io.ReadCloser
 	if len(os.Args) < 2 || os.Args[1] == "-" {
