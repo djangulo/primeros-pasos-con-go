@@ -4,9 +4,9 @@ Aprende a utilizar `Go`, también conocido como Golang.
 
 Este libro cuenta con las siguientes lecciones, a través de las cuales exploraremos diferentes aspectos del lenguaje. Desde la instalación, hasta patrones avanzados.
 
-- [Instalación de Go y configuración de ambiente](https://github.com/djangulo/primeros-pasos-con-go/tree/main/Instalacion.md)
-- [Introducción](https://github.com/djangulo/primeros-pasos-con-go/tree/main/Introduccion.md)
-- [Sintaxis](https://github.com/djangulo/primeros-pasos-con-go/tree/main/Sintaxis.md)
+- <a rel="noopener noreferrer" target="_blank" href="https://github.com/djangulo/primeros-pasos-con-go/tree/main/Instalacion.md">Instalación de Go y configuración de ambiente</a>
+- <a rel="noopener noreferrer" target="_blank" href="https://github.com/djangulo/primeros-pasos-con-go/tree/main/Introduccion.md">Introducción</a>
+- <a rel="noopener noreferrer" target="_blank" href="https://github.com/djangulo/primeros-pasos-con-go/tree/main/Sintaxis.md">Sintaxis</a>
 - Tipos de datos simples
 - Tipos de datos compuestos
 - Funciones y métodos
@@ -22,9 +22,9 @@ Este libro cuenta con las siguientes lecciones, a través de las cuales explorar
 
 Cada capítulo cuenta con una breve exposición, y uno o más ejemplos ejecutables. Le recomiendo que siga los ejemplos como se exponen, y trate de seguir el código.
 
-Si nunca ha programado antes, la [Introducción](https://github.com/djangulo/primeros-pasos-con-go/Introduccion.md) le puede parecer un tanto intimidante. Le recomiendo que la lea de todas formas, para que vea de lo que Go es capaz.
+Si nunca ha programado antes, la <a rel="noopener noreferrer" target="_blank" href="https://github.com/djangulo/primeros-pasos-con-go/tree/main/Introduccion.md">Introducción</a> le puede parecer un tanto intimidante. Le recomiendo que la lea de todas formas, para que vea de lo que Go es capaz.
 
-A partir de [Sintaxis básica](#), las cosas toman un paso mas lento, y no se dejan preguntas sin responder.
+A partir de <a rel="noopener noreferrer" target="_blank" href="https://github.com/djangulo/primeros-pasos-con-go/tree/main/Sintaxis.md">Sintaxis</a>, las cosas toman un paso mas lento, y no se dejan preguntas sin responder.
 
 ## ¿Como está organizado este libro?
 
@@ -33,22 +33,27 @@ Cada capítulo cuenta con su propia carpeta que comparte el mismo nombre. Dentro
 Por ejemplo, el código del capítulo "Introducción" está organizado como:
 
 ```
-~$ tree --dirsfirst ch1
+~$ tree --dirsfirst introduccion
 introduccion
 ├── hola-mundo
-│   └── hola-mundo.go
+│   ├── hola-mundo.go
+│   └── hola-mundo_test.go
 ├── servidor-web
 │   ├── v0
-│   │   └── main.go
+│   │   ├── main.go
+│   │   └── main_test.go
 │   └── v1
-│       └── main.go
+│       ├── main.go
+│       └── main_test.go
 └── wc
     ├── v0
-    │   └── main.go
+    │   ├── main.go
+    │   └── main_test.go
     └── v1
-        └── main.go
+        ├── main.go
+        └── main_test.go
 
-7 directories, 5 files
+7 directories, 10 files
 ```
 
 ## Contribuciones
