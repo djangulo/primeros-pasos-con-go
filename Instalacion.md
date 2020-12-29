@@ -85,6 +85,41 @@ A partir de la versión 1.11 Go cuenta con [`Módulos`](https://github.com/golan
 
 Los módulos permiten, entre otras cosas, tener un proyecto fuera del `GOPATH`, y manejo semi-automatizado de dependencias.
 
+Debajo hay instrucciones para iniciar un proyecto
+
+Para usar módulos, cree una carpeta para su proyecto, y en una terminal o shell
+
+```sh
+~$ go mod init nombre-del-proyecto
+go: creating new go.mod: module nombre-del-proyecto
+```
+
+Para agregar dependencias, sencillamente importelas a su proyecto. Algunas dependencias están versionadas, usted elige la versión al momento de importarlas, sin embargo, no se espera que el nombre del paquete cambie:
+
+```go
+...
+import "github.com/golang-migrate/migrate" // importa v1
+import "github.com/golang-migrate/migrate/v4" // importa v4
+```
+
+En el bloque de código anterior, estas importaciones crearían un nombre de conflicto, debido a que ambas versiones exportan el mismo paquete `migrate`.
+
+### Importación de paquetes locales
+
+Los módulos siempre tratan de importar paquetes de repositorios remotos. Si quiere utilizar un paquete local, puede usar la directiva `replace` en su `go.mod`:
+
+Antes:
+
+```diff
+module bla
+
+go 1.15
+
++ replace github.com/djangulo/primeros-pasos-con-go /ruta/a/paquete/local
+
+require github.com/golang-migrate/migrate/v4 v4.14.1 // indirect
+```
+
 # Editor de texto<a name="text-editor"></a>
 
 Para escribir los scripts, resulta muy útil tener a mano un editor de texto que provea:
